@@ -22,6 +22,9 @@
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
+% support Chinese
+\usepackage[BoldFont,SlantFont,CJKchecksingle]{xeCJK} %[BoldFont,SlantFont,CJKchecksingle]
+
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     pdftitle={},
