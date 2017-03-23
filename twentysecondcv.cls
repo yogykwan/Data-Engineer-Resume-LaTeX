@@ -199,14 +199,14 @@
               {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
               \end{array}
               $} 
-            & \cvsite\\}
+            & \href{\cvsite}{\cvsite}\\}
       \ifthenelse{\equal{\href{\cvgithub}{\cvgithub}}{}}{}{
         	{$
         		\begin{array}{l}
         		{\href{\cvgithub}{\includegraphics[scale=0.2]{img/github.png}}}
         		\end{array}
         		$} 
-        	& \cvgithub\\}
+        	& \href{\cvgithub}{\cvgithub}\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
