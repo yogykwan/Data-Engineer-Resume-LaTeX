@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh Gadgil
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill progress bars
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+		\textbf{Algorithm},
+        \textbf{~~OOP~~},
+        \textbf{~~STL~~},
+        \textbf{Network},
+       	\textbf{Full Stack}\\\textbf{~~Dev~~},
+        \textbf{~~Linux~~},
+        \textbf{System}\\\textbf{Design}
+    }
+}
+
+\interests{{Data Science/4.5},{Software Engineering/5},{System Architecture/6},{Full Stack Development/6}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Jing Guan} % Your name
+\cvjobtitle{ Full Stack Engineer} % Job title/career
+
+\cvgithub{https://github.com/yogykwan}
+\cvnumberphone{+86 185 1064 9016} % Phone number
+\cvsite{http://jennica.space/} % Personal website
+\cvmail{guanjing@ict.ac.cn} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{Jun 2016 - \\Sept 2016}
+        {PHP Backend Developer}
+        {\href{http://www.runorout.cn/}{Ah Oh Technology (Beijing) Co., Ltd.}}
+        {}
+        {
+        {\begin{itemize}
+        \item Developed card, point, prop, shop systems using PHP and MySQL
+        \item Upgraded system architecture using Nginx and Memcache
+        \item The number of users increased from 1,000 to 10,000
+    \end{itemize}}
+        }
+    
+    \twentyitem
+	    {Mar 2015 - \\Present}
+	    {Graduate Research Assistant}
+	    {\href{http://english.ict.cas.cn/}{ The Institute of Computing Technology of CAS}}
+	    {}
+	    {
+    	{\begin{itemize}
+    			\item Implemented a wireless full-duplex queue scheduling algorithm of MAC on NS-3 platform, which improved throughput and fairness
+    			\item Implemented a detection algorithm for DDoS using Bootstrap, Monte Carlo, Chebyshev, Hash and Bitmap on NFD platform with several real machines (Class A Journal)
+    	\end{itemize}}
+    }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{Jan 2017 - \\Present}
+	{Hot STL}
+	{Supplementary C++ STL}
+	{}
+	{
+		{\begin{itemize}
+				\item Built containers like string, vector, list, deque, set, map
+				\item Implemented algorithms like find, replace, remove, sort, unique
+				\item Added new components like bloomfilter, bitmap, ACM algorithms
+		\end{itemize}}
+	}
+
+	\twentyitem
+	{Jun 2014 - \\Present}
+	{Jennica Space}
+	{Full Stack Personal Website}
+	{}
+	{
+		{\begin{itemize}
+				\item Built a personal blog site using HTML, CSS and JS based on Jekyll
+				\item Developed single page web apps like challenge game, ascii images
+				\item Designed a backend multi user system and offered APIs for blog sites to manage states of their posts and readers
+		\end{itemize}}
+	}
+
+	\twentyitem
+	{Sept 2013 - \\Jul 2014}
+	{Encrypt and Decrypt Bit}
+	{Information Security Suite}
+	{}
+	{
+		{\begin{itemize}
+				\item Developed a text encryption and decryption software based on DES in C++ and MFC, which encrypted file through graphical interfaces
+				\item Developed a steganography software based on F3, F4, F5 Algorithms in Python, which hid secret into the pictures
+				\item Developed an image authentication software based on fragile watermarking in Python, which authenticated and repaired images
+		\end{itemize}}
+	}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 HONORS
+%----------------------------------------------------------------------------------------
+
+\section{Honors}
+\begin{twenty}
+	\twentyitemthree
+	{2012 - 2014}
+	{ACM International Student Program Competition}
+	{2 Silver, 2 Bronze}
+	\twentyitemthree
+	{2012 - 2013}
+	{National Software Design Competition}
+	{2 First Prize}
+	\twentyitemthree
+	{2012 - 2013}
+	{National Scholarship}
+	{2 Consecutive Years}
+	\twentyitemthree
+	{2012 - 2013}
+	{National College English Contest}
+	{1 First Prize, 1 Third Prize}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{2015 - 2018}
+	{Master, Computer Architecture}
+	{\href{http://english.cas.cn/}{University of Chinese Academy of Sciences}}
+	{}
+	{Current GPA: 3.33/4}
+	\twentyitem
+	{2011 - 2015}
+	{Bachelor, Information Security}
+	{\href{http://english.swjtu.edu.cn/}{Southwest Jiaotong University}}
+	{}
+	{GPA: 3.46/4.0, Top 3\%}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
