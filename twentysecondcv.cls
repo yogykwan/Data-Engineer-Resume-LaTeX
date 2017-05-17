@@ -150,7 +150,7 @@
 	\renewcommand{\interests}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+				\draw[fill=maingray,maingray] (0,\i) rectangle (4.5,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
 				\node [above right] at (0,\i+0.4) {\x};
 			}
@@ -184,7 +184,7 @@
     
         \vspace{5mm}
     \renewcommand{\arraystretch}{1.6}
-    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
+    \begin{tabular}{p{1cm} @{\hskip 0.2cm}p{5cm}}
         
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
             {$
@@ -203,10 +203,10 @@
       \ifthenelse{\equal{\href{\cvgithub}{\cvgithub}}{}}{}{
         	{$
         		\begin{array}{l}
-        		{\href{\cvgithub}{\includegraphics[scale=0.2]{img/github.png}}}
+        		{\href{https://\cvgithub}{\includegraphics[scale=0.2]{img/github.png}}}
         		\end{array}
         		$} 
-        	& \href{\cvgithub}{\cvgithub}\\}
+        	& \href{https://\cvgithub}{\cvgithub}\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
@@ -218,23 +218,28 @@
 
     %------------------------------------------------
         \vspace{3mm}
-        \profilesection{Skills}{4cm}
+        \profilesection{Skills}{2.6cm}
 
+        \hspace{-5mm}
     	\skills
         
         %------------------------------------------------
         \vspace{3mm}
-        \profilesection{Interests}{3cm} 
+        \profilesection{Interests}{1.6cm} 
         
         \interests
         
+       
         \vspace{3mm}
-        \profilesection{Languages}{2.4cm} 
+        \profilesection{Languages}{1.0cm} 
         {$
-              \begin{array}{l}
-              \hspace{-10mm}{\includegraphics[scale=0.32]{img/languages_6.png}}
-              \end{array}
+        %      \begin{array}{l}
+         %     \hspace{-65mm}{\includegraphics[scale=0.35]{img/languages_6.png}}
+          %    \end{array}
         $}   
+    
+        \hspace{-13mm}{\includegraphics[scale=0.31]{img/languages_6.png}}
+        
   \end{textblock}
 }
 
@@ -327,7 +332,7 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
 
 
 \usepackage{smartdiagram}
@@ -339,9 +344,9 @@
     %  specifies the minimum size of the bubbles
     bubble node size = 0.5cm,
     % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
+    distance center/other bubbles = 0.5cm,
     % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
+    distance text center bubble = 0.3cm,
     % set center bubble color
     bubble center node color = pblue,
     % define the list of colors usable in the diagram
