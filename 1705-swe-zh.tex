@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh Gadgil
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill progress bars
+\newcommand\skills{
+~
+	\smartdiagram[bubble diagram]{
+		\textbf{~~算法~~},
+		\textbf{面向对象},
+		\textbf{~~STL~~},
+		\textbf{网络技术},
+		\textbf{全栈开发},
+		\textbf{~~Linux~~},
+		\textbf{系统设计}
+    }
+}
+
+\interests{{大数据/3.2},{全栈开发/3.8},{系统架构/4.5},{软件开发/4.5}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{管婧} % Your name
+\cvjobtitle{软件工程师} % Job title/career
+
+\cvgithub{github.com/yogykwan}
+\cvnumberphone{+86 185 1064 9016} % Phone number
+\cvsite{http://jennica.space/} % Personal website
+\cvmail{guanjing@ict.ac.cn} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2016年6月 - \\2016年9月}
+        {PHP后台开发}
+        {\href{http://www.runorout.cn/}{啊喔科技（北京）有限公司}}
+        {}
+        {
+        {\begin{itemize}
+        \item 使用PHP和MySQL，独立开发成就卡、积分、道具和商城系统
+        \item 使用Nginx和Memcache，重构系统架构，提升性能和稳定性
+        \item 使用户数从1,000增长到10,000
+    \end{itemize}}
+        }
+    
+    \twentyitem
+	    {2015年3月 - \\至今}
+	    {学生研究助理}
+	    {\href{http://english.ict.cas.cn/}{中国科学院计算技术研究所}}
+	    {}
+	    {
+    	{\begin{itemize}
+    			\item 基于NS-3平台设计并实现了一种MAC层的无线全双工队列调度算法，提升了网络吞吐量和公平性
+    			\item 基于NFD平台，搭建多真机内网环境，利用Bootstrap、蒙特卡洛、切比雪夫和Bitmap，实现了一种DDoS攻击检测机制
+    	\end{itemize}}
+    }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+
+	
+	\twentyitem
+	{2016年6月 - \\至今}
+	{Geek News}
+	{混合移动应用}
+	{}
+	{
+		{\begin{itemize}
+				\item 使用Python和MongoDB为他人博客网站提供点赞、评论插件API
+				\item 利用OAuth2为用户提供注册登录及鉴别授权
+				\item 结合Ionic、Angular、Express开发跨平台博客分类推送APP，可点赞、评论、收藏
+		\end{itemize}}
+	}
+
+	\twentyitem
+	{2015年3月 - \\2016年1月}
+	{Hot STL}
+	{STL补充实现}
+	{}
+	{
+		{\begin{itemize}
+			\item 编写容器，包括vector, list, deque, set, map
+			\item 实现算法，包括find, replace, remove, sort, unique等
+			\item 新增组件，包括bloomfilter, bitmap, ACM算法库
+		\end{itemize}}
+	}
+	
+	\twentyitem
+	{2013年9月 - \\2014年7月}
+	{Encrypt and Decrypt Bit}
+	{信息安全套件}
+	{}
+	{
+		{\begin{itemize}
+				\item 基于DES算法，使用C++和MFC开发了一款文本加解密软件，提供图形化界面
+				\item 基于F3、F4、F5算法，利用Python开发了一款将保密信息写入图片的隐写软件
+				\item 基于脆弱水印算法，利用Python开发了一款图像认证系统，实现对图像的可靠性认证和对受损图像的修复
+		\end{itemize}}
+	}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 HONORS
+%----------------------------------------------------------------------------------------
+
+\section{Honors}
+\begin{twenty}
+	\twentyitemthree
+	{2012 - 2014}
+	{ACM国际大学生程序设计竞赛}
+	{银牌2次，铜牌2次}
+	\twentyitemthree
+	{2012 - 2013}
+	{全国软件设计大赛}
+	{一等奖2次}
+	\twentyitemthree
+	{2012 - 2013}
+	{国家奖学金}
+	{连续2年荣获}
+	\twentyitemthree
+	{2012 - 2013}
+	{全国大学生英语竞赛}
+	{一等奖1次，三等奖2次}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{2015 - 2018}
+	{硕士, 计算机系统结构}
+	{\href{http://english.cas.cn/}{中国科学院大学}}
+	{}
+	{当前GPA: 3.33/4}
+	\twentyitem
+	{2011 - 2015}
+	{学士, 信息安全}
+	{\href{http://english.swjtu.edu.cn/}{西南交通大学}}
+	{}
+	{GPA: 3.46/4, 前3\%}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
