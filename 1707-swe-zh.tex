@@ -22,20 +22,20 @@
 \documentclass[a4paper]{twentysecondcv} % a4paper for A4
 
 % Command for printing skill progress bars
-\newcommand\skills{ 
+\newcommand\skills{
 ~
 	\smartdiagram[bubble diagram]{
-		\textbf{Algorithm},
-        \textbf{~~OOP~~},
-        \textbf{~~STL~~},
-        \textbf{Network},
-       	\textbf{Full Stack}\\\textbf{~~Dev~~},
-        \textbf{~~Linux~~},
-        \textbf{System}\\\textbf{Design}
+		\textbf{~~算法~~},
+		\textbf{面向对象},
+		\textbf{大数据},
+		\textbf{网络技术},
+		\textbf{全栈开发},
+		\textbf{~~Linux~~},
+		\textbf{系统设计}
     }
 }
 
-\interests{{Big Data/3.2},{Full Stack Development/3.8},{System Architecture/4.5},{Software Engineering/4.5}}
+\interests{{网络系统架构/4.2},{数据科学/3.9},{全栈开发/3.9},{软件开发/4.5}}
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -45,8 +45,8 @@
 
 
 
-\cvname{Jing Guan} % Your name
-\cvjobtitle{ Software Engineer} % Job title/career
+\cvname{管婧} % Your name
+\cvjobtitle{软件工程师} % Job title/career
 
 \cvgithub{github.com/yogykwan}
 \cvnumberphone{+86 185 1064 9016} % Phone number
@@ -68,27 +68,39 @@
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem
-    	{Jun 2016 - \\Sept 2016}
-        {PHP Backend Developer}
-        {\href{http://www.runorout.cn/}{Ah Oh Technology (Beijing) Co., Ltd.}}
+	{2017年7月 -  \\2017年9月}
+	{实习软件工程师}
+	{\href{http://www.rgoogle.com/}{谷歌信息技术（中国）有限公司}}
+	{}
+	{
+		{\begin{itemize}
+				\item 利用Flume C++挖掘书籍metadata中的数据分布规律
+				\item 设计算法发掘书籍间的关系，将有关联的数据结构进行映射
+		\end{itemize}}
+	}
+	
+	\twentyitem
+    	{2016年6月 - \\2016年10月}
+        {PHP后台开发}
+        {\href{http://www.runorout.cn/}{啊喔科技（北京）有限公司}}
         {}
         {
         {\begin{itemize}
-        \item Developed card, point, prop, shop systems using PHP and MySQL
-        \item Upgraded system architecture using Nginx and Memcache
-        \item Increased number of users from 1,000 to 10,000
+        \item 使用PHP和MySQL，独立开发成就卡、积分、道具和商城系统
+        \item 使用Nginx和Memcache，重构系统架构，提升性能和稳定性
+        \item 使用户数从1,000增长到10,000
     \end{itemize}}
         }
     
     \twentyitem
-	    {Mar 2015 - \\Present}
-	    {Graduate Research Assistant}
-	    {\href{http://english.ict.cas.cn/}{ The Institute of Computing Technology of CAS}}
+	    {2015年3月 - \\至今}
+	    {学生研究助理}
+	    {\href{http://english.ict.cas.cn/}{中国科学院计算技术研究所}}
 	    {}
 	    {
     	{\begin{itemize}
-    			\item Implemented a wireless full-duplex queue scheduling algorithm of MAC on NS-3 platform, which improved throughput and fairness
-    			\item Implemented a detection algorithm for DDoS using Bootstrap, Monte Carlo, Chebyshev, Hash and Bitmap on NFD platform with several real machines
+    			\item 基于NS-3平台设计并实现了一种MAC层的无线全双工队列调度算法，提升了网络吞吐量和公平性
+    			\item 基于NFD平台，搭建多真机内网环境，利用Bootstrap、蒙特卡洛、切比雪夫和Bitmap，实现了一种DDoS攻击检测机制
     	\end{itemize}}
     }
         
@@ -102,48 +114,49 @@
 \section{Projects}
 
 \begin{twenty} % Environment for a list with descriptions
+
+	
 	\twentyitem
-	{Jun 2016 - \\Present}
+	{2016年6月 - \\至今}
 	{Geek News}
-	{Full Stack Hybrid App}
+	{混合移动应用}
 	{}
 	{
 		{\begin{itemize}
-				\item Developed like and comment plugin APIs using Python and MongoDB for others blog websites 
-				\item Developed user authentication and authorization sytem using OAuth2
-				\item Developed hybrid blog push app using Ionic, Angular and Express, users could like, comment and add blogs to favorite
+				\item 使用Python和MongoDB为他人博客网站提供点赞、评论插件API
+				\item 利用OAuth2为用户提供注册登录及鉴别授权
+				\item 结合Ionic、Angular、Express开发跨平台博客分类推送APP，可点赞、评论、收藏
 		\end{itemize}}
 	}
 
 	\twentyitem
-	{Mar 2015 - \\Jan 2016}
+	{2015年3月 - \\2016年1月}
 	{Hot STL}
-	{Supplementary C++ STL}
+	{STL补充实现}
 	{}
 	{
 		{\begin{itemize}
-				\item Built abridged version of containers like vector, list, deque, set, map
-				\item Implemented algorithms like find, replace, remove, sort, unique
-				\item Added new components like bloomfilter, bitmap, ACM algorithms
+			\item 编写容器，包括vector, list, deque, set, map
+			\item 实现算法，包括find, replace, remove, sort, unique等
+			\item 新增组件，包括bloomfilter, bitmap, ACM算法库
 		\end{itemize}}
 	}
-
+	
 	\twentyitem
-	{Sept 2013 - \\Jul 2014}
+	{2013年9月 - \\2014年7月}
 	{Encrypt and Decrypt Bit}
-	{Information Security Suite}
+	{信息安全套件}
 	{}
 	{
 		{\begin{itemize}
-				\item Developed a text encryption and decryption software based on DES in C++ and MFC, which encrypted file through graphical interfaces
-				\item Developed a steganography software based on F3, F4, F5 Algorithms in Python, which hid secret into the pictures
-				\item Developed an image authentication software based on fragile watermarking in Python, which authenticated and repaired images
+				\item 基于DES算法，使用C++和MFC开发了一款文本加解密软件，提供图形化界面
+				\item 基于F3、F4、F5算法，利用Python开发了一款将保密信息写入图片的隐写软件
+				\item 基于脆弱水印算法，利用Python开发了一款图像认证系统，实现对图像的可靠性认证和对受损图像的修复
 		\end{itemize}}
 	}
 	
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
-
 
 %----------------------------------------------------------------------------------------
 %	 HONORS
@@ -153,20 +166,20 @@
 \begin{twenty}
 	\twentyitemthree
 	{2012 - 2014}
-	{ACM International Student Program Competition}
-	{2 Silvers, 2 Bronzes}
+	{ACM国际大学生程序设计竞赛}
+	{银牌2次，铜牌2次}
 	\twentyitemthree
 	{2012 - 2013}
-	{National Software Design Competition}
-	{2 First Prizes}
+	{全国软件设计大赛}
+	{一等奖2次}
 	\twentyitemthree
 	{2012 - 2013}
-	{National Scholarship}
-	{2 Consecutive Years}
+	{国家奖学金}
+	{连续2年荣获}
 	\twentyitemthree
 	{2012 - 2013}
-	{National College English Contest}
-	{1 First Prize, 2 Third Prizes}
+	{全国大学生英语竞赛}
+	{一等奖1次，三等奖2次}
 \end{twenty}
 
 
@@ -176,18 +189,14 @@
 \section{Education}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem
+	\twentyitemthree
 	{2015 - 2018}
-	{Master, Computer Architecture}
-	{\href{http://english.cas.cn/}{University of Chinese Academy of Sciences}}
-	{}
-	{Current GPA: 3.33/4}
-	\twentyitem
+	{硕士, 计算机系统结构}
+	{\href{http://english.cas.cn/}{中国科学院大学}}
+	\twentyitemthree
 	{2011 - 2015}
-	{Bachelor, Information Security}
-	{\href{http://english.swjtu.edu.cn/}{Southwest Jiaotong University}}
-	{}
-	{GPA: 3.46/4.0, Top 3\%}
+	{学士, 信息安全}
+	{\href{http://english.swjtu.edu.cn/}{西南交通大学}}
 	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
 \end{twenty}
 
